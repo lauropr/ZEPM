@@ -11,6 +11,8 @@ export default class Master extends Controller {
 
     public aoPressionarItem(oEvent): void {
         
+        //novo comentario
+
         //resgatar a coluna clicada
         let oColumnListItem = oEvent.getSource();
 
