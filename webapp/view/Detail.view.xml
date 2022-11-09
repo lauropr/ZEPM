@@ -1,0 +1,81 @@
+<mvc:View controllerName="tra03.epm.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.ui.layout.form"
+    xmlns:m="sap.m">
+    <m:Page id="page" title="Detalhes do Parceiro">
+        <m:content>
+            <m:VBox class="sapUiSmallMargin">
+                <SimpleForm id="FormParceiro"
+                    editable="false"
+                    layout="ResponsiveGridLayout"
+                    title="Parceiro de Negócios"
+                    labelSpanXL="3"
+                    labelSpanL="3"
+                    labelSpanM="3"
+                    labelSpanS="12"
+                    adjustLabelSpan="false"
+                    emptySpanXL="4"
+                    emptySpanL="4"
+                    emptySpanM="4"
+                    emptySpanS="0"
+                    columnsXL="1"
+                    columnsL="1"
+                    columnsM="1"
+                    singleContainerFullSize="false" >
+                    <toolbar>
+                        <m:OverflowToolbar>
+                            <m:content>
+                                <m:ToolbarSpacer />
+                                <m:Button text="Editar" type="Emphasized" press="aoEditar" visible="{visualizacao>/visible}" />
+                                <m:Button text="Cancelar" type="Reject" press="aoCancelar" visible="{edicao>/visible}" />
+                                <m:Button text="Salvar" type="Accept" press="aoSalvar" visible="{edicao>/visible}" />
+                            </m:content>
+                        </m:OverflowToolbar>
+                    </toolbar>
+                    <content>
+                        <m:Label class="sapUiTinyMarginTop" text="Id" />
+                        <m:Input value="{PartnerId}" editable="false" />
+
+                        <m:Label class="sapUiTinyMarginTop" text="Tipo" />
+                        <m:Input value="{PartnerType}" editable="{editavel>/editavel}"/>
+
+                        <m:Label class="sapUiTinyMarginTop" text="Nome" />
+                        <m:Input value="{PartnerName1}" editable="{editavel>/editavel}"/>
+        
+                        <m:Label class="sapUiTinyMarginTop" text="Nome 2" />
+                        <m:Input value="{PartnerName2}" editable="{editavel>/editavel}"/>
+
+                        <m:Label class="sapUiTinyMarginTop" text="Termo de pesquisa" />
+                        <m:Input value="{SearchTerm1}" editable="{editavel>/editavel}"/>
+    
+                        <m:Label class="sapUiTinyMarginTop" text="Termo de pesquisa 2" />
+                        <m:Input value="{SearchTerm2}" editable="{editavel>/editavel}"/>
+
+                        <m:Label class="sapUiTinyMarginTop" text="Rua" />
+                        <m:Input value="{Street}" editable="{editavel>/editavel}"/>
+
+                        <m:Label class="sapUiTinyMarginTop" text="País" />
+                        <m:Input value="{Country}" editable="{editavel>/editavel}"/>
+
+                        <m:Label class="sapUiTinyMarginTop" text="Bairro" />
+                        <m:Input value="{District}" editable="{editavel>/editavel}"/>
+  
+                        <m:Label class="sapUiTinyMarginTop" text="Região" />
+                        <m:Input value="{Region}" editable="{editavel>/editavel}"/>
+    
+                        <m:Label class="sapUiTinyMarginTop" text="Cidade" />
+                        <m:Input value="{City}" editable="{editavel>/editavel}"/>
+    
+                        <m:Label class="sapUiTinyMarginTop" text="Código Postal" />
+                        <m:Input value="{ZipCode}" editable="{editavel>/editavel}" liveChange="aoDigitarCEP"/>
+    
+                    </content>
+                </SimpleForm>
+            </m:VBox>        
+        
+
+
+
+        </m:content>
+    </m:Page>
+</mvc:View>

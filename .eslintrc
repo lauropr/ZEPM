@@ -1,0 +1,29 @@
+{
+  "plugins": [
+    "@sap/ui5-jsdocs",
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "plugin:@sap/ui5-jsdocs/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "ignorePatterns": [
+    ".eslintignore.js"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": [
+      "./tsconfig.json"
+    ],
+    "tsconfigRootDir": ".",
+    "sourceType": "module"
+  }
+}

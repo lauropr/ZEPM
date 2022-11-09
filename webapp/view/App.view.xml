@@ -1,0 +1,13 @@
+<mvc:View controllerName="tra03.epm.controller.App"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+	<!-- <FlexibleColumnLayout
+		id="flexibleColumnLayout"
+		backgroundDesign="Solid"
+		layout="OneColumn" /> -->
+    <App id="app">
+    </App>
+
+
+</mvc:View>

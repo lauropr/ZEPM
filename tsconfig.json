@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "noEmit": true,
+    "checkJs": true,
+    "allowJs": true,
+    "types": [
+      "@sapui5/ts-types",
+      "@sapui5/ts-types-esm"
+    ],
+    "target": "es2015",
+    "skipLibCheck": true,
+    "preserveConstEnums": true,
+    "inlineSourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "moduleResolution": "node",
+    "rootDir": "webapp",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "tra03/epm/*": [
+        "webapp/*"
+      ]
+    }
+  },
+  "include": [
+    "webapp/**/*"
+  ]
+}
